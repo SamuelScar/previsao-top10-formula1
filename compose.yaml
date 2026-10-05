@@ -1,0 +1,13 @@
+name: mineracao-dados-tp1
+
+services:
+  tp1:
+    build:
+      context: .
+    image: mineracao-dados-tp1:local
+    init: true
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    volumes:
+      - ./dados:/app/dados
+      - ./logs:/app/logs
+      - ./resultados:/app/resultados

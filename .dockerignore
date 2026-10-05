@@ -1,0 +1,15 @@
+.git/
+.github/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+dados/
+logs/
+old/
+resultados/
+
+*.log
+*.pdf
+*.zip

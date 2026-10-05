@@ -1,0 +1,32 @@
+# Ambientes e arquivos locais
+.venv/
+venv/
+.env
+*.crdownload
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs gerados
+*.log
+
+# Arquivos auxiliares do LaTeX
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.run.xml
+*.toc
+*.synctex.gz
+
+# Arquivos locais que não fazem parte do fluxo ativo
+old/
+resultados/*.zip
