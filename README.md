@@ -1,48 +1,19 @@
-# TP1 — Análise preditiva de Fórmula 1
+# Previsão do top 10 na Fórmula 1
 
 O projeto investiga em qual momento de uma corrida já é possível prever quais
 pilotos ativos terminarão no top 10. O pré-processamento está concluído e o
 treinamento temporal foi executado com resultados em `resultados/treinamento/`.
 
-O relatório acadêmico consolidado está disponível em
+O relatório completo do projeto está disponível em
 [`previsao-top-10-formula-1.pdf`](previsao-top-10-formula-1.pdf).
 
 Todo o pipeline Python é executado com Docker. Não é necessário criar ambiente
 virtual nem instalar as dependências no computador.
 
-## Estrutura
-
-```text
-.
-├── dados/          # dados originais e base processada
-├── docker/         # entrada dos comandos executados no contêiner
-├── logs/           # logs gerados pelas execuções
-├── resultados/     # métricas, previsões, relatório e gráficos
-├── src/            # pré-processamento, treinamento e análise
-├── compose.yaml
-├── Dockerfile
-├── previsao-top-10-formula-1.pdf
-└── requirements.txt
-```
-
-## Fluxo ativo
-
-- `dados/originais/`: CSVs de origem preservados;
-- `src/preprocessamento/preparar_recorte.py`: gera a base de checkpoints;
-- `dados/gerados/base_checkpoints.csv`: entrada pronta para o treinamento;
-- `src/treinamento/treinar_modelos.py`: valida e compara os cinco
-  classificadores;
-- `resultados/treinamento/`: métricas e previsões produzidas pelo treinamento;
-- `logs/`: auditoria separada por etapa;
-- `previsao-top-10-formula-1.pdf`: relatório acadêmico final.
-
-Os materiais fornecidos pelo professor ficam fora deste repositório, no
-diretório local `../materiais-professor/`.
-
 ## Relatório
 
 - [`previsao-top-10-formula-1.pdf`](previsao-top-10-formula-1.pdf): relatório
-  final do Trabalho Prático 1.
+  final com a metodologia, os experimentos e os resultados.
 
 ## Execução com Docker
 
@@ -51,7 +22,7 @@ Pré-requisitos:
 - Docker Engine;
 - Docker Compose v2.
 
-Na raiz do TP1, construa a imagem:
+Na raiz do projeto, construa a imagem:
 
 ```bash
 docker compose build
